@@ -7,6 +7,10 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
@@ -22,26 +26,32 @@
     });
 
   </script>
+
+<style type="text/css">
+  .focusionado a {
+    color:#ffea00 !important;
+}
+
+  .focusionado:hover {
+    color:#ffea00 !important;
+}
+
+.focusionado:text {
+    color:#ffea00 !important;
+}
+
+</style>
 </head>
-<body class="dark grey">
+<body class="grey darken-2">
 
   <!-- Tablet&Smartphone NavBar -->
-  <nav class="hide-on-large-only teal">
+  <nav class="hide-on-large-only black">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#!" class="brand-logo">bssbrubs dev</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <ul class="sidenav" id="mobile-demo">
+       <ul class="sidenav" id="mobile-demo">
     <li><div class="user-view">
-      <div class="background teal darken-3">
+      <div class="background teal darken-4">
         <!-- <img src="img/side-background.jpg"> -->
       </div>
       <p class="center-align">
@@ -56,43 +66,45 @@
     <li><a class="subheader">Subheader</a></li>
     <li><a class="waves-effect" href="#!">Lattes</a></li>
   </ul>
+    </div>
+  </nav>
+
+ 
   <!---------------------------->
 
 
   <!-- Desktop SideBar -->
-  <ul id="slide-out" class="sidenav sidenav-fixed teal">
+  <ul id="slide-out" class="sidenav sidenav-fixed grey darken-3 center-align">
     <li><div class="user-view ">
-      <div class="background teal darken-3">
+      <div class="background grey darken-4">
         <!-- <img src="img/side-background.jpg"> -->
       </div>
       <div class="center-align">
         <a href="#user"><img class="responsive-img" src="img/portrait.jpg"></a>
-        <a href="#name"><span class="white-text name">Bruno Sousa</span></a>
+        <a href="#name"><span class="yellow-text text-accent-3 name">Bruno Sousa</span></a>
         <a href="#email"><span class="white-text email">bssbrubs@gmail.com</span></a>
       </div>
     </div></li>
-    <li><a href="#!"><i class="material-icons">cloud</i>Publicações</a></li>
-    <li><a href="#!">Extracurricular</a></li>
+    <li class="focusionado"><a href="#!" ><span class="focusionado white-text">Publicações</span></a></li>
+    <li><a href="#!"><span class="white-text">Extracurricular</span></a></li>
     <li><div class="divider"></div></li>
-    <li><a class="subheader">Links</a></li>
-    <li><a class="waves-effect" href="#!">Lattes</a></li>
+    <li><a class="subheader"><span class="yellow-text text-accent-3">Links</span></a></li>
+    <li><a class="waves-effect" target="_blank" href="http://lattes.cnpq.br/3346015472135365"><span class="white-text">Currículo Lattes</a></span></li>
   </ul>
   <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-down"><i class="material-icons">menu</i></a>
   <!---------------------------->
 
 <main>
   <div class="col s12 m7">
-    <h2 class="header">Horizontal Card</h2>
+    <h2 class="header">bssbrubs dev</h2>
     <div class="card horizontal">
       <div class="card-image">
         <img src="https://lorempixel.com/100/190/nature/6">
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
+          <p>Apenas uma coisas feitas no tempo livre.</p>
+          <p>Only some things made on free time.</p>
         </div>
       </div>
     </div>
