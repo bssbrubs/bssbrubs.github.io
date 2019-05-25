@@ -1,1 +1,103 @@
-Hello World
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bruno Sousa Front End Developer</title>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <!-- Starting Sidenav -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+
+  </script>
+</head>
+<body class="dark grey">
+
+  <!-- Tablet&Smartphone NavBar -->
+  <nav class="hide-on-large-only teal">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><div class="user-view">
+      <div class="background teal darken-3">
+        <!-- <img src="img/side-background.jpg"> -->
+      </div>
+      <p class="center-align">
+        <a href="#user"><img class="responsive-img" src="img/portrait.jpg"></a>
+        <a href="#name"><span class="white-text name">Bruno Sousa</span></a>
+        <a href="#email"><span class="white-text email">bssbrubs@gmail.com</span></a>
+      </p>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>Publicações</a></li>
+    <li><a href="#!">Extracurricular</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Lattes</a></li>
+  </ul>
+  <!---------------------------->
+
+
+  <!-- Desktop SideBar -->
+  <ul id="slide-out" class="sidenav sidenav-fixed teal">
+    <li><div class="user-view ">
+      <div class="background teal darken-3">
+        <!-- <img src="img/side-background.jpg"> -->
+      </div>
+      <div class="center-align">
+        <a href="#user"><img class="responsive-img" src="img/portrait.jpg"></a>
+        <a href="#name"><span class="white-text name">Bruno Sousa</span></a>
+        <a href="#email"><span class="white-text email">bssbrubs@gmail.com</span></a>
+      </div>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>Publicações</a></li>
+    <li><a href="#!">Extracurricular</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Links</a></li>
+    <li><a class="waves-effect" href="#!">Lattes</a></li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-down"><i class="material-icons">menu</i></a>
+  <!---------------------------->
+
+<main>
+  <div class="col s12 m7">
+    <h2 class="header">Horizontal Card</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="https://lorempixel.com/100/190/nature/6">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
