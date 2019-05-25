@@ -19,10 +19,14 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-  <!-- Starting Sidenav -->
+  <!-- Starting Elements -->
   <script type="text/javascript">
     $(document).ready(function(){
       $('.sidenav').sidenav();
+    });
+
+    $(document).ready(function(){
+      $('.slider').slider();
     });
 
   </script>
@@ -90,23 +94,33 @@
   <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-down"><i class="material-icons">menu</i></a>
   <!---------------------------->
 
-  <main class="center-align">
-    <div class="col s10 offset-s2 m12">
-      
-      <div class="card horizontal">
-        <div class="card-image">
-          <img src="https://lorempixel.com/100/190/nature/6">
+  <main class="valign-wrapper">
+   <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Sistema de Relatório com PHP, MySQL e Highcharts.</h3>
+          <h5 class="light grey-text text-lighten-3">Gere relatórios com um simples código PHP com MySQL.</h5>
         </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>Apenas uma coisas feitas no tempo livre.</p>
-            <p>Only some things made on free time.</p>
-          </div>
+      </li>
+      <li>
+        <a href="https://github.com/bssbrubs/semaforoComArduino" target="_blank"><img src="img/semaforo.jpg"></a> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Projeto Starter com Arduino: Semaforo de duas vias</h3>
+          <h5 class="light grey-text text-lighten-3">Simples projeto para iniciantes em Arduino, com código comentado.</h5>
         </div>
-      </div>
-    </div>
+      </li>
+      <li>
+        <a href="https://github.com/bssbrubs/NTC-LDR" target="_blank"><img src="https://lorempixel.com/580/250/nature/3"></a> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Projeto Starter com Arduino: Medidor de Luminosidade e Humidade</h3>
+          <h5 class="light grey-text text-lighten-3">Projeto em Arduino, para exibir Luminosidade e Humidade em um LCD 16x2.</h5>
+        </div>
+      </li>
+    </ul>
   </div>
-  </main>
+</main>
 
 </body>
 </html>
