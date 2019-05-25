@@ -15,6 +15,30 @@ header, main, footer {
 
 }
 
+.sidenav {
+	overflow:hidden;
+}
+
+.sidenav-fixed {
+	overflow:hidden;
+}
+
+.sidenav:hover {
+	overflow:auto;
+}
+
+.sidenav-fixed:hover {
+	overflow:auto;
+}
+
+.focusionado:hover span {
+	color:#ffea00 !important;
+}
+
+.focusionado:hover {
+	background-color: #212121;
+}
+
 .img-li-v-lign a {
 	vertical-align: middle;
 	padding-left: 5px;
